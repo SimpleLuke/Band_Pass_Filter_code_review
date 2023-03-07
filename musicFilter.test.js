@@ -24,4 +24,8 @@ describe("musicFilter", () => {
   it("returns [50] when given [40] and cutomer lower thershold is 50", () => {
     expect(musicFilter([40], 50, 100)).toEqual([50]);
   });
+
+  it("returns [100] when given [200] and cutomer high thershold is 100", () => {
+    expect(musicFilter([200], 50, 100)).toEqual([100]);
+  });
 });
