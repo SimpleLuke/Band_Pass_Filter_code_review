@@ -28,4 +28,12 @@ describe("musicFilter", () => {
   it("returns [100] when given [200] and cutomer high thershold is 100", () => {
     expect(musicFilter([200], 50, 100)).toEqual([100]);
   });
+
+  it("returns [40,800] when given [40,800]", () => {
+    expect(musicFilter([40, 800])).toEqual([40, 800]);
+  });
+
+  it("returns [40,1000] when given [40,1200]", () => {
+    expect(musicFilter([40, 1200])).toEqual([40, 1000]);
+  });
 });

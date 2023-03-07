@@ -1,8 +1,10 @@
 const musicFilter = (array, low = 40, high = 1000) => {
-  if (array[0] < low) {
-    return [low];
-  } else if (array[0] > high) {
-    return [high];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < low) {
+      array[i] = low;
+    } else if (array[i] > high) {
+      array[i] = high;
+    }
   }
   return array;
 };
