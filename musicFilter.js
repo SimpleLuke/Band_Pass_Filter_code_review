@@ -1,5 +1,5 @@
-const musicFilter = () => {
-  return [40];
+const musicFilter = (array) => {
+  return array;
 };
 
 module.exports = musicFilter;
