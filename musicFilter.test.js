@@ -16,4 +16,8 @@ describe("musicFilter", () => {
   it("returns [50] when given [50]", () => {
     expect(musicFilter([50])).toEqual([50]);
   });
+
+  it("returns [1000] when given [1300]", () => {
+    expect(musicFilter([1300])).toEqual([1000]);
+  });
 });
